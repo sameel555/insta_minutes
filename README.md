@@ -14,7 +14,12 @@ The trigger function (API) must accept the text as input, sleep for duration of 
 - MongoDB
 
 ### Dependencies
-node-schedule
+- node-schedule
+- axios
+- react-router-dom
+- cors
+- dotenv
+
 
 ### How to run program
 
@@ -29,6 +34,6 @@ node-schedule
 
 ### Problems Faced
  This is the first time am using node-schedule, so I took more time to implement this. Also got stucked while deploying in heroku.
- By reading so many documentation I overcame this issues
+ By reading so many documentation I overcame this issues.
 
 [Video Demo](https://drive.google.com/file/d/1f-RJjWRSMH72KuEpcdg_DudaEFLCcYpC/view?usp=sharing) 
