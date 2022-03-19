@@ -8,13 +8,13 @@ const events = require('../event')
 const schedule = require('node-schedule')
 
 router.get('/', async (req, res) => {
-  // console.log('The get request is loading')
+  //console.log('The get request is loading')
   try {
     events.forEach((el) => {
       schedule.scheduleJob(el.text, el.dateTime, () => {
-        console.log('The schedulesd')
+        console.log('The schedulesd', el.text)
         // console.log(revText(el.text))
-        // router.route('/input')
+        router.route('/input')
         res.status(200).send(el.text)
 
         // console.log(el.text)
